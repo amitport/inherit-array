@@ -18,13 +18,15 @@
     "array",
     "util"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "lodash.assign": "^3.0.0"
+  },
   "devDependencies": {
-    "browserify": "^9.0.3",
+    "browserify": "^9.0.7",
     "grunt-cli": "^0.1.13",
-    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-jshint": "^0.11.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-mocha-cli": "^1.12.0",
+    "grunt-mocha-cli": "^1.13.0",
     "jshint-stylish": "^1.0.1",
     "load-grunt-tasks": "^3.1.0",
     "time-grunt": "^1.1.0"
