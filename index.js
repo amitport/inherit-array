@@ -1,6 +1,6 @@
 'use strict';
 
-var assign = require('lodash.assign');
+var assign = Object.assign || require('object.assign');
 
 module.exports = function toArraySubClassFactory(ArraySubClass) {
   ArraySubClass.prototype = assign(Object.create(Array.prototype),  ArraySubClass.prototype);
