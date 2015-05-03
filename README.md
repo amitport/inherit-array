@@ -57,7 +57,7 @@ $ npm run browser
 
 MIT © [Amit Portnoy](https://github.com/amitport)
 
-[npm-image]: https://img.shields.io/npm/v/inherit-array.svg?style=flat
+[npm-image]: https://badge.fury.io/js/inherit-array.svg
 [npm-url]: https://npmjs.org/package/inherit-array
 [travis-image]: https://travis-ci.org/amitport/inherit-array.svg?branch=master
 [travis-url]: https://travis-ci.org/amitport/inherit-array
