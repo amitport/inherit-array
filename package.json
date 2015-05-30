@@ -19,17 +19,17 @@
     "util"
   ],
   "dependencies": {
-    "object.assign": "^2.0.1"
+    "object.assign": "^3.0.0"
   },
   "devDependencies": {
-    "browserify": "^10.0.0",
+    "browserify": "^10.2.3",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-cli": "^1.13.0",
-    "jshint-stylish": "^1.0.2",
-    "load-grunt-tasks": "^3.1.0",
-    "time-grunt": "^1.1.1"
+    "jshint-stylish": "^2.0.0",
+    "load-grunt-tasks": "^3.2.0",
+    "time-grunt": "^1.2.1"
   },
   "scripts": {
     "test": "grunt",
