@@ -26,25 +26,40 @@ var subArrayFactory = inheritArray(SubArray);
 
 var subArray = subArrayFactory(3);
 
-assert.strictEqual(subArray.x, 3);
-
-subArray.push(2);
-
-assert.strictEqual(subArray.length, 1);
-assert.strictEqual(subArray[0], 2);
-assert.strictEqual(subArray.last(), 2);
-
-subArray.length = 3;
-
-assert.strictEqual(subArray.join(), '2,,');
-
-subArray.length = 0;
-
-assert.strictEqual(JSON.stringify(subArray), '[]');
+/*****************/
+/* it's an Array */
+/*****************/
 
 assert(Array.isArray(subArray));
 assert(subArray instanceof Array);
 
+// it has Array methods
+subArray.push(2);
+
+// array accessor work
+assert.strictEqual(subArray[0], 2);
+
+// array length work
+assert.strictEqual(subArray.length, 1);
+subArray.length = 3;
+assert.strictEqual(subArray.join(), '2,,');
+subArray.length = 0;
+assert.strictEqual(JSON.stringify(subArray), '[]'); // BONUS: JSON.stringify works
+
+subArray[1] = 5;
+// Function.prototype.apply treats it as an array
+(function () {assert.strictEqual(arguments[1], 5);}).apply(null, subArray);
+
+/*******************/
+/* it's a SubArray */
+/*******************/
+
+assert(subArray instanceof SubArray);
+
+// it uses SubArray constructor
+assert.strictEqual(subArray.x, 3);
+// it has SubArray methods
+assert.strictEqual(subArray.last(), 5);
 ```
 
 ```sh
